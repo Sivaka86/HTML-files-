@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Sivaka">
+    <title>Create Form using Html</title>
+</head>
+<body>
+    <!--
+        ctrl + / comment , uncommont ctrl + /
+    -->
+    <h2>Create Form using Html</h2>
+
+    <form action="sign_up.html" method="GET"> 
+        <div>
+            <label for="username">User Name</label>
+            <input type="text" name="username" id="username">
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="password">Password
+                <input type="password" name="password" id="password">
+            </label>
+        </div>
+        <br><br>
+        <button type="submit">Sign Up</button>
+    </form>
+    <br>
+    <hr>
+    <br>
+    <form action="sign_in.html" method="GET"> 
+        <div>
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname">
+        </div>
+        <br>
+        <div>
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname">
+        </div>
+        <br>
+        <div>
+            <label>Email
+                <input type="email" name="email">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <br><br>
+        <button>Sign In</button>
+    </form>
+
+    <br>
+    <hr>
+    <br>
+    <!-- placeholder and value-->
+    <form action="sign_in.html" method="GET"> <!---  method="POST"/ GET-->
+        <div>
+            <input type="text" name="username" id="username" value="Vaha">
+        </div>
+        <br>
+        <div>
+            <input type="email" name="email" placeholder="abc123@gmail.com">
+        </div>
+        <br>
+        <div>
+            <input type="password" name="password" id="password">
+        </div>
+        <br><br>
+        <button>Sign In</button>
+    </form>
+
+    <br><br>
+    <hr>
+    <br>
+    <form action="sign_in.html" method="GET"> 
+        <div>
+            <input type="text" name="username" id="username" value="Vaha" maxlength="15">
+        </div>
+        <br>
+        <div>
+            <input type="email" name="email" placeholder="abc123@gmail.com" size="50" required>
+        </div>
+        <br>
+        <div>
+            <input type="password" name="password" id="password" minlength="8">
+        </div>
+        <br><br>
+        <button type="submit">Sign In</button>
+        <button type="reset">Reset</button>
+    </form>
+    <br><br>
+    <hr>
+    <form action="sign_up.html" method="GET"> 
+        <div>
+            <label for="username">User Name</label>
+            <input type="text" name="username" id="username">
+        </div>
+    
+        <div>
+            <label for="dob">Date of Birth
+                <input type="number" name="dob" id="dob" step="10">
+            </label>
+        </div>
+        
+        <div>
+            <label for="marks">Marks
+                <input type="number" name="marks" id="marks" min="35"  max="100">
+            </label>
+        </div>
+        <div>
+            <label for="startDate">Start Date
+                <input type="Date" name="startDate" id="startDate" min="5/09/2023">
+            </label>
+        </div>
+        <div>
+            <label for="webUrl">Website
+                <input type="url" name="webUrl" id="webUrl">
+            </label>
+        </div>
+        <br>
+        <br>
+        <div>
+                <label for="direction">Direction</label>
+                <input type="search" name="direction" id="direction">
+                <button>Search</button>
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="password">Password
+                <input type="password" name="password" id="password">
+            </label>
+        </div>
+        <br>
+
+        <br>
+        <div>
+            <label for="address">Address</label>
+            <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="gender">Gender</label><br>
+            <input type="checkbox" name="gender" id="gender">
+            <label for="male">Male</label>
+            <input type="checkbox" name="gender" id="gender">
+            <label for="female">Female</label>
+
+        </div>
+
+        <br>
+        <button type="submit">Sign Up</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <br>
+    <hr>
+    <br>
+</body>
+</html>
